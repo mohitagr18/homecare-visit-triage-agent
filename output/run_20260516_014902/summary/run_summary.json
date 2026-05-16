@@ -1,6 +1,6 @@
 {
-  "run_id": "run_phase3_test",
-  "timestamp": "2026-05-16T02:47:17.394307Z",
+  "run_id": "run_20260516_014902",
+  "timestamp": "2026-05-16T05:49:02.636218Z",
   "methods": [
     "band_crop_vlm_cloud"
   ],
@@ -16,12 +16,12 @@
       "gt_time_in_accuracy": 0.0,
       "gt_time_out_accuracy": 0.0,
       "fully_correct_rate": 0.0,
-      "hours_mismatch_rate": 0.2222222222222222,
+      "hours_mismatch_rate": 0.4,
       "total_files": 1,
-      "total_rows": 18,
+      "total_rows": 5,
       "gt_matched_rows": 0,
-      "accepted_rows": 14,
-      "flagged_rows": 4
+      "accepted_rows": 3,
+      "flagged_rows": 2
     }
   },
   "per_method_file_count": {

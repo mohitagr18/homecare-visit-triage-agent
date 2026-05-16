@@ -1,6 +1,6 @@
 {
-  "run_id": "run_phase3_final",
-  "timestamp": "2026-05-16T02:48:37.072752Z",
+  "run_id": "run_20260516_012654",
+  "timestamp": "2026-05-16T05:26:54.890473Z",
   "methods": [
     "band_crop_vlm_cloud"
   ],
@@ -16,15 +16,15 @@
       "gt_time_in_accuracy": 0.6547619047619048,
       "gt_time_out_accuracy": 0.6833333333333333,
       "fully_correct_rate": 0.6547619047619048,
-      "hours_mismatch_rate": 0.08914141414141415,
-      "total_files": 8,
-      "total_rows": 62,
+      "hours_mismatch_rate": 0.1067003367003367,
+      "total_files": 30,
+      "total_rows": 216,
       "gt_matched_rows": 26,
-      "accepted_rows": 42,
-      "flagged_rows": 20
+      "accepted_rows": 180,
+      "flagged_rows": 36
     }
   },
   "per_method_file_count": {
-    "band_crop_vlm_cloud": 8
+    "band_crop_vlm_cloud": 30
   }
 }

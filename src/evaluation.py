@@ -238,10 +238,26 @@ def evaluate_file(
     unmatched = [r for r in row_evals if not r.matched_gt]
 
     if unmatched:
-        logger.debug(
-            "%s: %d/%d rows have no GT match (GT coverage gap)",
-            anon_file, len(unmatched), len(row_evals),
-        )
+        if len(unmatched) == len(row_evals):
+            # Try to see if this is a date anomaly vs missing patient
+            real_file_any = resolver.resolve_for_date(anon_file, rows[0].date)
+            if real_file_any:
+                dates = sorted(list(set(str(r.date) for r in rows)))
+                logger.warning(
+                    "DATA ANOMALY: %s resolved to a known patient, but 0/%d extracted dates matched GT. "
+                    "Extracted dates: %s. This likely indicates an extraction pipeline error (e.g., misread year/month).",
+                    anon_file, len(rows), dates
+                )
+            else:
+                logger.debug(
+                    "%s: %d/%d rows have no GT match (GT coverage gap)",
+                    anon_file, len(unmatched), len(row_evals),
+                )
+        else:
+            logger.debug(
+                "%s: %d/%d rows have no GT match (GT coverage gap)",
+                anon_file, len(unmatched), len(row_evals),
+            )
 
     hours_scores = [
         fe.score

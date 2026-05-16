@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import logging
+import shutil
 import sys
 from pathlib import Path
 from uuid import uuid4
@@ -72,6 +73,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--log-level", default="INFO",
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
+    )
+    parser.add_argument(
+        "--skip-review", action="store_true",
+        help="Auto-accept all flagged rows and skip human review (useful for automated CI runs)",
     )
     return parser.parse_args()
 
@@ -129,6 +134,14 @@ def main() -> None:
     output_dir = config.output_path / run_id
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Cleanup old runs to keep only the latest 2
+    run_dirs = [d for d in config.output_path.iterdir() if d.is_dir() and d.name.startswith("run_")]
+    # Sort by modification time, newest first
+    run_dirs.sort(key=lambda d: d.stat().st_mtime, reverse=True)
+    for old_run in run_dirs[2:]:
+        logger.info("Deleting old run directory to keep only latest 2: %s", old_run.name)
+        shutil.rmtree(old_run, ignore_errors=True)
+
     # Serialize config for reproducibility
     config_dict = {
         "evaluation": {
@@ -178,15 +191,24 @@ def main() -> None:
     # Check if graph paused for HITL review
     snapshot = g.get_state(invoke_config)
     if snapshot.next:
-        logger.warning(
-            "Graph paused at: %s. Resume with: graph.invoke(Command(resume=[...]), config)",
-            snapshot.next,
-        )
-        logger.info(
-            "Flagged rows: %d — review required before final report",
-            len(result.get("flagged_for_review", [])),
-        )
-    else:
+        flagged = result.get("flagged_for_review", [])
+        if getattr(args, "skip_review", False):
+            logger.info("Graph paused for HITL. --skip-review is set, auto-accepting %d flagged rows...", len(flagged))
+            from langgraph.types import Command
+            decisions = [{"row_index": r["row_index"], "accept": True} for r in flagged]
+            result = g.invoke(Command(resume=decisions), invoke_config)
+            snapshot = g.get_state(invoke_config)
+        else:
+            logger.warning(
+                "Graph paused at: %s. Resume with: graph.invoke(Command(resume=[...]), config)",
+                snapshot.next,
+            )
+            logger.info(
+                "Flagged rows: %d — review required before final report",
+                len(flagged),
+            )
+
+    if not snapshot.next:
         # Completed — print summary
         summary = result.get("summary", {})
         agg = summary.get("aggregate", {}).get(method, {})
