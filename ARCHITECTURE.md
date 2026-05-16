@@ -6,6 +6,76 @@
 
 ---
 
+## 0. Project Context — Read This First
+
+### Local Paths
+```
+Project root:     /Users/mohit/Documents/GitHub/homecare-visit-triage-agent
+Architecture:     /Users/mohit/Documents/GitHub/homecare-visit-triage-agent/ARCHITECTURE.md  (this file)
+```
+
+### Reference Repositories (for patterns and code reuse)
+```
+Primary:   https://github.com/mohitagr18/langgraph-agent-testing
+           → Reuse: LangGraph graph wiring, state schema, one-way dependency pattern,
+             evaluator-as-function pattern, 3-layer test hierarchy, uv/pyproject.toml setup
+
+Secondary: https://github.com/mohitagr18/timesheet-ocr
+           → Reuse: Pydantic config (src/config.py), parser helpers (parse_date, parse_hours,
+             parse_time, clean_name), benchmark export patterns, PHI anonymization approach
+```
+
+### Existing Files in the Workspace (as of project start)
+```
+/Users/mohit/Documents/GitHub/homecare-visit-triage-agent/
+├── .env                                          ← API keys (gitignored)
+├── .gitignore                                    ← already ignores input/, .DS_Store
+├── README.md                                     ← placeholder
+├── ARCHITECTURE.md                               ← THIS FILE
+└── input/                                        ← gitignored; contains all input data
+    ├── ground_truth.xlsx                          ← 210 GT rows, 23 source files, no header row
+    │                                                Columns (positional): [0] source_file (REAL name),
+    │                                                [1] date (ISO), [2] total_hours, [3] time_in (12h "7:00 AM"),
+    │                                                [4] time_out (12h "3:00 PM"), [5] employee_name (not evaluated)
+    ├── You Shipped an AI Agent to...Medium.pdf    ← Reference article (not used in code)
+    └── band_crop_vlm_cloud/                       ← First method (of 6)
+        ├── merged_results.xlsx                    ← 225 rows, 30 anonymized source files
+        │                                            Sheet: "Timesheet Data"
+        │                                            Key cols: Source File (anon), Date (ISO),
+        │                                            Time In (HH:MM), Time Out, Total Hours, Status, Issues
+        ├── name_mapping.db                        ← SQLite: patients table maps e.g. Patient_L → N.Rivera
+        │                                            Cols: anonymized_id, real_name, source_files
+        └── benchmark_patient_*.xlsx (×30)         ← Per-file debug artifacts (IGNORED by pipeline)
+```
+
+### Files That Do NOT Exist Yet (to be created)
+```
+pyproject.toml, uv.lock, config.yaml, langgraph.json
+src/ (entire directory)
+scripts/run_benchmark.py
+tests/ (entire directory)
+output/ (created at runtime)
+```
+
+### Tool Requirements
+```
+Python:  >= 3.11
+Manager: uv (NOT pip, NOT conda). Install: https://docs.astral.sh/uv/
+Run:     uv sync → uv run python scripts/run_benchmark.py
+Test:    uv run pytest tests/ -v
+```
+
+### PHI/PII Hard Constraint
+```
+This is healthcare data (HIPAA). Real patient/employee names and filenames exist ONLY in:
+  - input/ground_truth.xlsx
+  - input/{method}/name_mapping.db
+These are gitignored. All output artifacts MUST use anonymized identifiers only.
+The name resolver maps anon → real IN-MEMORY ONLY for GT matching. See Section 11.
+```
+
+---
+
 ## 1. Project Summary
 
 **What:** A LangGraph-based evaluation pipeline that benchmarks 6 document extraction
@@ -479,85 +549,375 @@ Primary metric: **GT Hours Accuracy (±15 min)**
 
 ---
 
-## 10. Implementation Plan
+## 10. Implementation Plan — With Verification Criteria
 
-**Every step must pass before moving to the next.** This is the staged execution model.
+**Rule: every phase has an observable verification.** You should never wonder "is it working?"
+If the verification step fails, the phase is not done. Do not proceed to the next phase.
+
+---
 
 ### Phase 1: Project Scaffolding
-```
-Step 1.1: Create pyproject.toml with deps: langgraph, pydantic, openpyxl, pyyaml, pytest
-Step 1.2: Run `uv sync` — verify clean install
-Step 1.3: Create config.yaml with default settings
-Step 1.4: Create src/__init__.py, src/config.py — verify config loads
-Step 1.5: Create langgraph.json pointing to src/graph.py
-```
-**Gate:** `uv sync` succeeds, `uv run python -c "from src.config import load_config; load_config()"` works.
 
-### Phase 2: Data Layer (Models + Ingestion + GT)
-```
-Step 2.1: Create src/models.py — all Pydantic types
-Step 2.2: Create src/ingestion.py — reads merged_results.xlsx → list[ExtractionRow]
-Step 2.3: Create src/ground_truth.py — reads ground_truth.xlsx → lookup dict
-Step 2.4: Create src/name_resolver.py — reads name_mapping.db, maps anon → real
-Step 2.5: Create src/normalization.py — ExtractionRow → NormalizedRow
-Step 2.6: Create src/metrics.py — hours_match, time_match, exact_match
-```
-**Gate:** Unit tests for each module pass:
+**What you build:** `pyproject.toml`, `config.yaml`, `src/__init__.py`, `src/config.py`, `langgraph.json`
+
+**How you know it's working:**
+
 ```bash
-uv run pytest tests/test_unit.py -v  # metrics, normalization, GT loading, name resolver
+# 1. Dependencies install cleanly
+uv sync
+# ✅ Expected: "Resolved X packages" with no errors. A uv.lock file appears.
+
+# 2. Config loads from YAML
+uv run python -c "from src.config import load_config; c = load_config(); print(c)"
+# ✅ Expected: Prints the config object with hours_tolerance_minutes=15, etc.
+# ❌ Failure: ImportError, YAML parse error, or missing field → fix before proceeding
+
+# 3. LangGraph is importable
+uv run python -c "from langgraph.graph import StateGraph; print('OK')"
+# ✅ Expected: "OK"
 ```
+
+**Files that must exist after Phase 1:**
+```
+pyproject.toml          ← has langgraph, pydantic, openpyxl, pyyaml, pytest
+uv.lock                 ← auto-generated by uv sync
+config.yaml             ← hours_tolerance_minutes: 15, time_tolerance_minutes: 30
+src/__init__.py          ← empty
+src/config.py            ← load_config() returns a Pydantic AppConfig
+langgraph.json           ← points to src/graph.py (graph.py doesn't exist yet — that's OK)
+```
+
+---
+
+### Phase 2: Data Layer (Models + Ingestion + GT + Name Resolver + Normalization + Metrics)
+
+**What you build:** `src/models.py`, `src/ingestion.py`, `src/ground_truth.py`, `src/name_resolver.py`, `src/normalization.py`, `src/metrics.py`
+
+**How you know it's working — step by step:**
+
+```bash
+# 2.1 Models are importable and valid
+uv run python -c "
+from src.models import ExtractionRow, NormalizedRow, GroundTruthRow, RowEvalResult
+print('All models imported OK')
+"
+# ✅ Expected: "All models imported OK"
+
+# 2.2 Ingestion reads your actual merged_results.xlsx
+uv run python -c "
+from src.ingestion import ingest
+from pathlib import Path
+rows = ingest(Path('input/band_crop_vlm_cloud/merged_results.xlsx'))
+print(f'Ingested {len(rows)} rows')
+print(f'First row: source_file={rows[0].source_file}, date={rows[0].date}, hours={rows[0].total_hours}')
+print(f'Last row:  source_file={rows[-1].source_file}, date={rows[-1].date}')
+"
+# ✅ Expected: "Ingested 225 rows" (or close), first row shows patient_a_week1.pdf, date, hours
+# ❌ Failure: KeyError on column name → column mapping is wrong
+
+# 2.3 Ground truth loads and parses 12h times
+uv run python -c "
+from src.ground_truth import load_ground_truth
+from pathlib import Path
+gt = load_ground_truth(Path('input/ground_truth.xlsx'))
+print(f'Loaded {len(gt)} GT entries')
+sample_key = list(gt.keys())[0]
+print(f'Sample key: {sample_key}')
+print(f'Sample value: {gt[sample_key]}')
+"
+# ✅ Expected: "Loaded 210 GT entries"
+#    Sample key is a (real_filename, date) tuple
+#    Sample value shows time_in as datetime.time (e.g., 07:00), NOT "7:00 AM"
+# ❌ Failure: time_in is still a string → 12h parsing is broken
+
+# 2.4 Name resolver maps anonymized → real
+uv run python -c "
+from src.name_resolver import NameResolver
+from pathlib import Path
+resolver = NameResolver(Path('input/band_crop_vlm_cloud/name_mapping.db'))
+real = resolver.resolve('patient_a_week1.pdf')
+print(f'patient_a_week1.pdf → {real}')
+# Also test that the anon filename for N.Rivera resolves
+for anon in ['patient_l_week5.pdf', 'patient_l_week6.pdf']:
+    real = resolver.resolve(anon)
+    print(f'{anon} → {real}')
+"
+# ✅ Expected: Each prints a real filename (e.g., "N.Rivera-Timesheets-021826-022426.pdf")
+# ❌ Failure: Returns None → mapping logic is wrong. Check DB schema.
+
+# 2.5 Normalization converts types
+uv run python -c "
+from src.ingestion import ingest
+from src.normalization import normalize
+from pathlib import Path
+rows = ingest(Path('input/band_crop_vlm_cloud/merged_results.xlsx'))
+norm = normalize(rows[0])
+print(f'date type: {type(norm.date).__name__} = {norm.date}')
+print(f'time_in type: {type(norm.time_in).__name__} = {norm.time_in}')
+print(f'source_file: {norm.source_file}')  # must be anonymized
+"
+# ✅ Expected: date type=date, time_in type=time, source_file=patient_a_week1.pdf
+# ❌ Failure: date is still a string → parsing didn't run
+
+# 2.6 Metrics return correct boundary values
+uv run python -c "
+from src.metrics import hours_match, time_match
+from datetime import time
+# Exactly at tolerance (15min = 0.25h)
+print('7.0 vs 7.25 (±15min):', hours_match(7.0, 7.25, 15))  # should be 1.0
+print('7.0 vs 7.26 (±15min):', hours_match(7.0, 7.26, 15))  # should be 0.0
+# Time match
+print('08:30 vs 08:45 (±30min):', time_match(time(8,30), time(8,45), 30))  # should be 1.0
+print('08:30 vs 09:15 (±30min):', time_match(time(8,30), time(9,15), 30))  # should be 0.0
+"
+# ✅ Expected: 1.0, 0.0, 1.0, 0.0 — exactly these values
+# ❌ Failure: Wrong values → tolerance arithmetic is broken
+```
+
+**Files that must exist after Phase 2:**
+```
+src/models.py, src/ingestion.py, src/ground_truth.py
+src/name_resolver.py, src/normalization.py, src/metrics.py
+```
+
+---
 
 ### Phase 3: Evaluation Logic
+
+**What you build:** `src/evaluation.py`, `src/reporting.py`
+
+**How you know it's working:**
+
+```bash
+# 3.1 End-to-end evaluation of one file (no graph yet — just functions)
+uv run python -c "
+from pathlib import Path
+from src.ingestion import ingest
+from src.normalization import normalize
+from src.ground_truth import load_ground_truth
+from src.name_resolver import NameResolver
+from src.evaluation import evaluate_row
+from src.config import load_config
+
+config = load_config()
+rows = ingest(Path('input/band_crop_vlm_cloud/merged_results.xlsx'))
+gt = load_ground_truth(Path('input/ground_truth.xlsx'))
+resolver = NameResolver(Path('input/band_crop_vlm_cloud/name_mapping.db'))
+
+# Pick first row, normalize, resolve, evaluate
+norm = normalize(rows[0])
+real_file = resolver.resolve(norm.source_file)
+gt_key = (real_file, norm.date) if real_file else None
+gt_row = gt.get(gt_key) if gt_key else None
+
+result = evaluate_row(norm, gt_row, config)
+print(f'File: {result.source_file}')       # must be anonymized
+print(f'Date: {result.date}')
+print(f'Matched GT: {result.matched_gt}')
+print(f'Fully correct: {result.fully_correct}')
+for fe in result.field_evals:
+    print(f'  {fe.field}: score={fe.score}, comment={fe.comment}')
+"
+# ✅ Expected:
+#   File: patient_a_week1.pdf  (anonymized — no real name)
+#   Matched GT: True (if this file is in ground_truth.xlsx)
+#   Each field_eval shows score=1.0 or 0.0 with a clear comment
+# ❌ Failure: Matched GT=False when it should be True → name resolver or GT key mismatch
+# ❌ Failure: "Rivera" appears anywhere in output → PHI leak
+
+# 3.2 Reporting writes paper table
+uv run python -c "
+from src.reporting import generate_summary
+# ... (after running evaluation on multiple rows)
+# Check that output/run_id/summary/paper_table.md exists and contains a markdown table
+"
+# ✅ Expected: paper_table.md has a row for band_crop_vlm_cloud with percentage values
 ```
-Step 3.1: Create src/evaluation.py — evaluate_row, eval_hours, eval_time_in, eval_time_out
-Step 3.2: Create src/reporting.py — generate_summary, write paper_table.md
-```
-**Gate:** Can evaluate one file from `band_crop_vlm_cloud` against GT and print scores.
+
+---
 
 ### Phase 4: LangGraph Agent
-```
-Step 4.1: Create src/state.py — BenchmarkState TypedDict
-Step 4.2: Create src/nodes.py — all 5 node functions wrapping the data layer
-Step 4.3: Create src/graph.py — wire nodes + conditional edge + HITL interrupt
-Step 4.4: Create scripts/run_benchmark.py — CLI entry point that invokes the graph
-```
-**Gate:** Full graph invocation works for one file:
+
+**What you build:** `src/state.py`, `src/nodes.py`, `src/graph.py`, `scripts/run_benchmark.py`
+
+**How you know it's working:**
+
 ```bash
+# 4.1 Graph compiles without error
+uv run python -c "
+from src.graph import build_graph
+g = build_graph()
+print(f'Graph nodes: {list(g.get_graph().nodes.keys())}')
+print('Graph compiled OK')
+"
+# ✅ Expected: Nodes list includes: __start__, ingest, normalize, evaluate, human_review, report, __end__
+# ❌ Failure: ImportError or missing node → check src/nodes.py imports
+
+# 4.2 Full CLI invocation for one file — clean case (no HITL trigger)
 uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --file patient_a_week1
-# → output/{run_id}/summary/paper_table.md exists with scores
+# ✅ Expected output:
+#   [info] Discovered method: band_crop_vlm_cloud
+#   [info] Ingested 5 rows from patient_a_week1.pdf        ← number of rows for that file
+#   [info] Normalized 5 rows
+#   [info] Evaluated 5 rows (X matched GT, Y unmatched)
+#   [info] No ambiguous rows — skipping human review
+#   [info] Summary written to output/run_YYYYMMDD_HHMMSS/summary/run_summary.json
+#   [info] Paper table written to output/run_YYYYMMDD_HHMMSS/summary/paper_table.md
+
+# 4.3 Verify output artifacts exist and contain expected content
+cat output/run_*/summary/paper_table.md
+# ✅ Expected: A markdown table with one row:
+#   | Method | GT Hours Acc (±15m) | ... |
+#   | band_crop_vlm_cloud | XX.X% | ... |
+
+cat output/run_*/band_crop_vlm_cloud/band_crop_vlm_cloud_eval.json | python3 -m json.tool | head -30
+# ✅ Expected: JSON array of RowEvalResult dicts with field_evals
+#   Every source_file value must be anonymized (patient_*, never real name)
+
+cat output/run_*/run_config.json | python3 -m json.tool | head -10
+# ✅ Expected: Full config snapshot showing hours_tolerance_minutes: 15, etc.
+
+# 4.4 Verify no PHI in any output file
+grep -ri "Rivera\|Leal\|Jackson\|Derricott\|Elliott\|Bussa\|Hanton\|Pegram\|Drewry\|Moran" output/
+# ✅ Expected: NO matches (zero lines). Any match = PHI leak = must fix before proceeding.
 ```
+
+---
 
 ### Phase 5: Testing Layers
-```
-Step 5.1: Create tests/test_unit.py — metric boundaries, normalization edge cases,
-          triage routing, PHI leak prevention
-Step 5.2: Create tests/test_integration.py — full graph routing with fixture files
-Step 5.3: Create tests/test_hitl.py — interrupt/resume at human_review node
-Step 5.4: Create tests/test_evaluation.py — scored against GT dataset
-Step 5.5: Create tests/fixtures/ — synthetic xlsx and db files for deterministic tests
-```
-**Gate:** All 4 test layers pass:
+
+**What you build:** `tests/test_unit.py`, `tests/test_integration.py`, `tests/test_hitl.py`, `tests/test_evaluation.py`, `tests/fixtures/`
+
+**How you know it's working:**
+
 ```bash
+# 5.1 Layer 1 — Unit tests
+uv run pytest tests/test_unit.py -v
+# ✅ Expected: All tests PASSED. Specifically check for:
+#   test_hours_at_tolerance_boundary PASSED
+#   test_hours_over_tolerance PASSED
+#   test_normalize_handles_malformed_time PASSED
+#   test_triage_flags_ambiguous_rows PASSED
+#   test_triage_skips_review_when_clean PASSED
+#   test_name_resolver_never_leaks_phi PASSED
+
+# 5.2 Layer 2 — Integration tests
+uv run pytest tests/test_integration.py -v
+# ✅ Expected:
+#   test_clean_file_completes_without_review PASSED
+#   test_state_flows_through_all_nodes PASSED
+#   test_output_contains_only_anonymized_filenames PASSED
+
+# 5.3 Layer 3 — HITL tests
+uv run pytest tests/test_hitl.py -v
+# ✅ Expected:
+#   test_ambiguous_rows_trigger_interrupt PASSED
+#   test_resume_after_human_decision PASSED
+#   test_report_includes_human_decisions PASSED
+
+# 5.4 Layer 4 — Evaluation tests
+uv run pytest tests/test_evaluation.py -v
+# ✅ Expected:
+#   test_gt_hours_accuracy_above_threshold PASSED
+#   test_per_field_evaluators_score_correctly PASSED
+
+# 5.5 All layers together
 uv run pytest tests/ -v
+# ✅ Expected: ALL tests pass. Zero failures. The summary line shows something like:
+#   "X passed in Y.YYs"
+# ❌ Failure: Any FAILED test → fix before moving to Phase 6
 ```
+
+---
 
 ### Phase 6: Staged Execution
+
+**What you build:** Nothing new — this phase validates the existing pipeline at increasing scale.
+
+**How you know it's working:**
+
+```bash
+# Stage 1: Smoke test (1 file)
+uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --file patient_a_week1
+# ✅ Verify: paper_table.md exists, has one data row, percentages are numbers (not NaN or "—")
+
+# Stage 2: Two files
+uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --limit 2
+# ✅ Verify: paper_table.md still has one row (same method, aggregated)
+# ✅ Verify: eval JSON has rows from TWO different source files
+# ✅ Verify: Hours accuracy in paper_table.md is within ~5% of Stage 1
+#    (If it swings wildly, there may be state leakage between files)
+
+# Stage 3: Five files
+uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --limit 5
+# ✅ Verify: Same checks as Stage 2. Numbers should be stabilizing.
+# ✅ Verify: failures.json shows any rows that didn't match GT (expected — some files
+#    may not be in ground_truth.xlsx). Count should be explainable.
+
+# Stage 4: Twenty-five files
+uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --limit 25
+# ✅ Verify: Numbers should be very close to final. No crashes, no memory issues.
+
+# Stage 5: All files
+uv run python scripts/run_benchmark.py --method band_crop_vlm_cloud --all
+# ✅ Verify: paper_table.md contains final numbers for the paper.
+# ✅ Verify: run_summary.json shows total_rows ≈ 225, gt_matched_rows ≈ 210
+# ✅ Verify: No PHI in output (run the grep check from Phase 4.4 again)
+
+# KEY STABILITY CHECK across stages:
+# Hours accuracy should converge:
+#   Stage 1: ~85% (high variance, only 5 rows)
+#   Stage 2: ~87%
+#   Stage 3: ~88%
+#   Stage 5: ~89% (final)
+# If accuracy DROPS significantly between stages, investigate which files caused the drop
+# using failures.json
 ```
-Step 6.1: --file patient_a_week1  (1 file smoke test)
-Step 6.2: --limit 2               (verify no state leakage between files)
-Step 6.3: --limit 5               (edge cases at scale)
-Step 6.4: --limit 25              (near-full)
-Step 6.5: --all                   (final paper numbers)
-```
-**Gate:** Numbers are stable across stages. Paper table is generated.
+
+---
 
 ### Phase 7: Multi-Method (After User Provides More Data)
+
+**What you build:** Nothing new — user adds `input/{method}/merged_results.xlsx` + `name_mapping.db` for each additional method.
+
+**How you know it's working:**
+
+```bash
+# 7.1 After adding a second method (e.g., ocr_only)
+uv run python scripts/run_benchmark.py --method ocr_only --file patient_a_week1
+# ✅ Verify: Works exactly like band_crop_vlm_cloud did in Phase 4
+
+# 7.2 Comparative run across two methods
+uv run python scripts/run_benchmark.py --all
+# ✅ Verify: paper_table.md now has TWO rows:
+#   | Method                | GT Hours Acc | ... |
+#   | band_crop_vlm_cloud   | 89.0%       | ... |
+#   | ocr_only              | 72.3%       | ... |
+# The numbers should be different between methods (that's the point of benchmarking)
+
+# 7.3 After all 6 methods are added
+uv run python scripts/run_benchmark.py --all
+# ✅ Verify: paper_table.md has 6 rows. This is the final table for the IEEE paper.
+# ✅ Verify: run_summary.json has per_method entries for all 6 methods.
+# ✅ Verify: Zero PHI in any output file.
 ```
-Step 7.1: User adds input/{method_2}/merged_results.xlsx + name_mapping.db
-Step 7.2: Run --method {method_2} --file patient_a_week1
-Step 7.3: Repeat for all 6 methods
-Step 7.4: Run --all to generate comparative paper table
-```
+
+---
+
+### Quick Reference: Red Flags at Each Phase
+
+| Phase | Red Flag | What It Means |
+|---|---|---|
+| 1 | `uv sync` fails | Dependency conflict. Check Python version ≥ 3.11 |
+| 2 | Ingestion returns 0 rows | Column name mapping doesn't match xlsx headers |
+| 2 | GT loads but `time_in` is a string | 12h → 24h time parsing not implemented |
+| 2 | Name resolver returns None for all files | DB table name or column name wrong |
+| 3 | All rows have `matched_gt=False` | Name resolution → GT key mismatch. Most common bug. |
+| 3 | All scores are 0.0 | Tolerance units wrong (minutes vs hours) |
+| 4 | Graph compiles but invoke crashes | Node function signature doesn't match state schema |
+| 4 | Real names appear in output | PHI leak. `name_resolver` result is being stored instead of discarded |
+| 5 | HITL test can't trigger interrupt | `needs_review` never becomes True. Check triage criteria. |
+| 6 | Accuracy swings wildly between stages | State leakage between files, or GT coverage is uneven |
 
 ---
 

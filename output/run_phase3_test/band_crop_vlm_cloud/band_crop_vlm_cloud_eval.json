@@ -1,0 +1,179 @@
+[
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "total_rows": 18,
+    "accepted_rows": 14,
+    "flagged_rows": 4,
+    "gt_matched_rows": 0,
+    "row_evals": [
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 85,
+        "date": "2026-03-04",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 86,
+        "date": "2026-03-05",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 87,
+        "date": "2026-03-06",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 88,
+        "date": "2026-03-07",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 89,
+        "date": "2026-03-08",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 90,
+        "date": "2026-03-09",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 91,
+        "date": "2026-03-10",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 92,
+        "date": "2026-03-10",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 93,
+        "date": "2026-03-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 94,
+        "date": "2026-03-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 95,
+        "date": "2026-03-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 96,
+        "date": "2026-03-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 97,
+        "date": "2026-03-16",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 98,
+        "date": "2026-03-17",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 99,
+        "date": "2026-03-18",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 100,
+        "date": "2026-03-18",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 101,
+        "date": "2026-03-19",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_l_week12.pdf",
+        "row_index": 102,
+        "date": "2026-03-19",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.2222222222222222
+  }
+]

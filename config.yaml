@@ -1,0 +1,24 @@
+# Benchmark pipeline configuration
+# Override any value with env var: DOCBENCH_<SECTION>_<KEY>=value
+
+paths:
+  input_dir: "input"
+  output_dir: "output"
+  ground_truth_file: "input/ground_truth.xlsx"
+
+evaluation:
+  hours_tolerance_minutes: 15      # ±15 min for GT Hours Accuracy (primary metric)
+  time_tolerance_minutes: 30       # ±30 min for Time-In / Time-Out accuracy
+  # Rows flagged for HITL review if:
+  # - hours mismatch exists but within tolerance (borderline cases)
+  # - extraction status is "flagged" but values match GT
+  # - multiple GT rows match same (file, date)
+  review_borderline_hours: true
+  review_flagged_matching_gt: true
+
+logging:
+  level: "INFO"                    # DEBUG | INFO | WARNING | ERROR
+  per_method_log: true             # write separate log per method in output/
+
+cache:
+  enabled: true                    # skip re-ingestion/normalization if artifact exists

@@ -1,0 +1,30 @@
+{
+  "run_id": "run_20260515_225118",
+  "timestamp": "2026-05-16T02:51:18.796161Z",
+  "methods": [
+    "band_crop_vlm_cloud"
+  ],
+  "config_snapshot": {
+    "evaluation": {
+      "hours_tolerance_minutes": 15,
+      "time_tolerance_minutes": 30
+    }
+  },
+  "aggregate": {
+    "band_crop_vlm_cloud": {
+      "gt_hours_accuracy": 1.0,
+      "gt_time_in_accuracy": 1.0,
+      "gt_time_out_accuracy": 1.0,
+      "fully_correct_rate": 1.0,
+      "hours_mismatch_rate": 0.0,
+      "total_files": 1,
+      "total_rows": 4,
+      "gt_matched_rows": 4,
+      "accepted_rows": 4,
+      "flagged_rows": 0
+    }
+  },
+  "per_method_file_count": {
+    "band_crop_vlm_cloud": 1
+  }
+}
