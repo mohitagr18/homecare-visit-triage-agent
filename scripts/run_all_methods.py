@@ -31,6 +31,9 @@ def setup_logging() -> None:
     )
 
 def main():
+    from dotenv import load_dotenv
+    load_dotenv()
+    
     setup_logging()
     logger = logging.getLogger("run_all_methods")
 

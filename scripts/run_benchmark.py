@@ -82,6 +82,9 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    from dotenv import load_dotenv
+    load_dotenv()
+
     args = parse_args()
     setup_logging(args.log_level)
     logger = logging.getLogger("run_benchmark")
