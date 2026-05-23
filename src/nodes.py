@@ -31,6 +31,7 @@ from src.reporting import (
     write_method_artifacts,
 )
 from src.state import BenchmarkState
+from src.tracing import tracing_ctx
 
 logger = logging.getLogger(__name__)
 
@@ -116,12 +117,18 @@ def evaluate_node(state: BenchmarkState) -> dict[str, Any]:
 
     logger.info("[%s] evaluate: %d unique source files", method, len(by_file))
 
-    # Evaluate each file
+    # Evaluate each file — wrapped in a LangSmith trace when mode >= evaluation_only
     file_results = []
     all_flagged: list[dict[str, Any]] = []
 
     for anon_file, file_rows in by_file.items():
-        result = evaluate_file(file_rows, gt_lookup, resolver, method, config)
+        with tracing_ctx(
+            f"evaluate_file:{anon_file}",
+            tags=["layer:evaluation", f"method:{method}"],
+            metadata={"method": method, "source_file": anon_file, "row_count": len(file_rows)},
+            required_mode="evaluation_only",
+        ):
+            result = evaluate_file(file_rows, gt_lookup, resolver, method, config)
         file_results.append(result)
 
         # Collect rows flagged for HITL review

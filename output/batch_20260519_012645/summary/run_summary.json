@@ -1,6 +1,6 @@
 {
-  "run_id": "batch_20260516_020804",
-  "timestamp": "2026-05-16T06:08:05.186431Z",
+  "run_id": "batch_20260519_012645",
+  "timestamp": "2026-05-19T05:26:45.597769Z",
   "methods": [
     "band_crop_vlm_cloud",
     "layout_guided_vlm_cloud",
