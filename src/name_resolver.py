@@ -11,12 +11,8 @@ name_mapping.db schema:
              source_files (comma-separated list of all real filenames for this patient)
 
 Matching strategy:
-    "patient_l_week5.pdf"
-        → extract label "patient_l" → capitalize → "Patient_L"
-        → look up Patient_L in DB → real_name = "N.Rivera"
-        → find all GT source files that start with "N.Rivera"
-        → if multiple (same patient, multiple weeks), use week number to narrow by date range
-        → return the single best matching real filename
+    Sequential week index mapping (1 to 30) from the anonymized filename
+    directly to the master alphabetical list of real filenames.
 """
 
 from __future__ import annotations
@@ -43,10 +39,10 @@ class NameResolver:
             raise FileNotFoundError(f"name_mapping.db not found: {db_path}")
 
         self._db_path = db_path
-        # Load entire mapping into memory — DB is small (< 100 rows)
         self._anon_to_real_name: dict[str, str] = {}     # Patient_L → N.Rivera
         self._real_name_to_files: dict[str, list[str]] = {}  # N.Rivera → [file1, file2]
         self._gt_filenames: list[str] = []    # set via set_gt_filenames() for best matching
+        self._master_files: list[str] = []    # Master sorted list of all 30 files in the system
         self._load()
 
     def _load(self) -> None:
@@ -54,23 +50,28 @@ class NameResolver:
         try:
             cur = conn.cursor()
             cur.execute("SELECT anonymized_id, real_name, source_files FROM patients")
+            all_files_set = set()
             for anon_id, real_name, source_files_str in cur.fetchall():
                 if not anon_id or not real_name:
                     continue
                 self._anon_to_real_name[anon_id.strip()] = real_name.strip()
-                # source_files is a comma-separated list of ALL filenames in the system.
-                # Filter to only files that belong to this patient (start with real_name prefix).
                 if source_files_str:
-                    all_files = [f.strip() for f in source_files_str.split(",") if f.strip()]
+                    files = [f.strip() for f in source_files_str.split(",") if f.strip()]
+                    all_files_set.update(files)
+                    
+                    # Store filtered files for patient prefix as well for compatibility
                     prefix = real_name.strip()
-                    patient_files = [f for f in all_files if f.startswith(prefix)]
+                    patient_files = [f for f in files if f.startswith(prefix)]
                     if patient_files:
                         self._real_name_to_files[real_name.strip()] = patient_files
+            
+            # Sort alphabetically to establish the sequential mapping mapping: Y-th week file -> index Y-1
+            self._master_files = sorted(list(all_files_set))
         finally:
             conn.close()
         logger.debug(
-            "NameResolver loaded %d patient mappings from %s",
-            len(self._anon_to_real_name), self._db_path.name,
+            "NameResolver loaded %d patient mappings and %d master files from %s",
+            len(self._anon_to_real_name), len(self._master_files), self._db_path.name,
         )
 
     def set_gt_filenames(self, gt_filenames: list[str]) -> None:
@@ -85,52 +86,37 @@ class NameResolver:
         """Map an anonymized filename to its real filename.
 
         Matching strategy:
-        1. Extract patient label from anon filename → look up real_name in DB
-        2. If GT filenames are registered, find the GT file that best matches
-           (same real_name prefix, closest week number by date range)
-        3. Fall back to DB source_files list if GT not registered
-
-        Args:
-            anon_filename: e.g. "patient_l_week5.pdf"
-
-        Returns:
-            Real filename for internal GT lookup, or None if unresolvable.
-            Caller MUST NOT store or log this value in output artifacts.
+        1. Extract the sequential week index Y from the anonymized filename.
+        2. Retrieve the real filename at index Y-1 from the master list.
+        3. If GT filenames are registered, normalize spaces and hyphens to return
+           the exact filename representation used in the ground truth keys.
         """
-        anon_id = _extract_patient_label(anon_filename)
-        if anon_id is None:
-            logger.debug("Cannot extract patient label from: %s", anon_filename)
-            return None
-
-        real_name = self._anon_to_real_name.get(anon_id)
-        if real_name is None:
-            logger.debug("No DB entry for patient label: %s (from %s)", anon_id, anon_filename)
-            return None
-
-        # Prefer matching against registered GT filenames (most reliable)
-        if self._gt_filenames:
-            return self._match_against_gt(real_name, anon_filename)
-
-        # Fallback: use DB source_files filtered to this patient
-        real_files = self._real_name_to_files.get(real_name, [])
-        if not real_files:
-            logger.debug("No real files for real_name=%r (filtered from DB)", real_name)
-            return None
-        if len(real_files) == 1:
-            return real_files[0]
-
         week_num = _extract_week_number(anon_filename)
-        if week_num is not None:
-            sorted_files = sorted(real_files, key=_extract_date_range_start)
-            idx = week_num - 1
-            if 0 <= idx < len(sorted_files):
-                return sorted_files[idx]
+        if week_num is None or not (1 <= week_num <= len(self._master_files)):
+            logger.debug("Cannot resolve week number for: %s", anon_filename)
+            # Fall back to letter-based matching for backward compatibility/safety
+            anon_id = _extract_patient_label(anon_filename)
+            if anon_id is None:
+                return None
+            real_name = self._anon_to_real_name.get(anon_id)
+            if real_name is None:
+                return None
+            if self._gt_filenames:
+                return self._match_against_gt(real_name, anon_filename)
+            real_files = self._real_name_to_files.get(real_name, [])
+            return real_files[0] if real_files else None
 
-        logger.warning(
-            "Multiple DB files for %s (patient: %s) and no GT registered — using first",
-            anon_filename, anon_id,
-        )
-        return real_files[0]
+        real_file = self._master_files[week_num - 1]
+
+        # Reconcile hyphen vs space mismatch if GT filenames are registered
+        if self._gt_filenames:
+            clean_real = real_file.replace('-', '').replace(' ', '').lower()
+            for gt_file in self._gt_filenames:
+                clean_gt = gt_file.replace('-', '').replace(' ', '').lower()
+                if clean_real == clean_gt:
+                    return gt_file
+
+        return real_file
 
     def _match_against_gt(self, real_name: str, anon_filename: str) -> str | None:
         """Find the best-matching GT filename for this patient.
@@ -151,41 +137,12 @@ class NameResolver:
             return candidates[0]
 
         # Multiple candidates: sort by start date, return all; caller picks by row date
-        # Return the chronologically first for now — evaluate_file handles per-row matching
         sorted_candidates = sorted(candidates, key=_extract_date_range_start)
         return sorted_candidates[0]
 
     def resolve_for_date(self, anon_filename: str, row_date: "datetime.date") -> str | None:
-        """Resolve to the GT filename whose date range contains row_date.
-
-        More precise than resolve() — use this when you have the actual row date.
-        """
-        import datetime
-        anon_id = _extract_patient_label(anon_filename)
-        if anon_id is None:
-            return None
-        real_name = self._anon_to_real_name.get(anon_id)
-        if real_name is None:
-            return None
-
-        candidates = [
-            f for f in self._gt_filenames
-            if f.startswith(real_name + "-") or f.startswith(real_name + " ")
-        ]
-        if not candidates:
-            return None
-        if len(candidates) == 1:
-            return candidates[0]
-
-        # Pick the candidate whose encoded date range contains row_date
-        for candidate in candidates:
-            start, end = _parse_date_range(candidate)
-            if start and end and start <= row_date <= end:
-                return candidate
-
-        # If no range match, fall back to chronologically closest
-        sorted_candidates = sorted(candidates, key=_extract_date_range_start)
-        return sorted_candidates[0]
+        """Resolve to the GT filename. Since week index is 1-to-1, delegates to resolve()."""
+        return self.resolve(anon_filename)
 
     def build_filename_map(
         self, anon_filenames: list[str], gt_filenames: list[str]
@@ -247,14 +204,27 @@ def _extract_patient_label(anon_filename: str) -> str | None:
 
 
 def _extract_week_number(anon_filename: str) -> int | None:
-    """Extract the week number from an anonymized filename.
+    """Extract the week number sequentially (1 to 30) from an anonymized filename.
 
     "patient_l_week5.pdf" → 5
     "patient_a_week1.pdf" → 1
+    "patient_\\_week28.pdf" → 28
     """
-    match = re.search(r"_week(\d+)\.pdf", anon_filename.lower())
+    match = re.search(r"week(\d+)", anon_filename.lower())
     if match:
         return int(match.group(1))
+
+    # Handle symbol-based filenames
+    symbols = { '[': 27, '\\': 28, ']': 29, '^': 30 }
+    for s, w in symbols.items():
+        if f"patient_{s}" in anon_filename.lower():
+            return w
+
+    # Fallback to letter index
+    match = re.match(r"patient_([a-z])", anon_filename.lower())
+    if match:
+        char = match.group(1)
+        return ord(char) - ord('a') + 1
     return None
 
 

@@ -31,19 +31,17 @@ This implementation plan checklist outlines the remaining work to transform the 
 - [x] **Step 3.3 — Document Limitations:** Highlight boundaries where this architectural pattern is not suitable.
 - [x] **Step 3.4 — Draft Generalizability Document:** Create `docs/paper/generalizability.md`.
 
-### ⬜ Phase 4: Related Work Section
+### 🟥 Phase 4: Related Work Section (SKIPPED)
 *Goal: Position the pipeline against existing academic work in human-in-the-loop (HITL) systems, AI safety frameworks, and medical evaluation benchmarks.*
 
-- [ ] **Step 4.1 — Literature Research:** Identify 5-10 key papers or guidance documents (e.g., FDA AI/ML, NIST AI RMF, constitutional AI).
-- [ ] **Step 4.2 — Draft Subsections:** Formulate the HITL, Healthcare AI Evaluation, and Trustworthy System Design literature positioning.
-- [ ] **Step 4.3 — Draft Related Work Document:** Create `docs/paper/related_work.md`.
+- [x] **Phase Skipped:** Skipped by request of the user.
 
-### ⬜ Phase 5: Evidence Packaging
+### 🟩 Phase 5: Evidence Packaging
 *Goal: Consolidate the findings, tables, arguments, and draft sections into a single publication-ready markdown package.*
 
-- [ ] **Step 5.1 — Consolidate Tables and Sections:** Combine all tables and text from Phases 1-4.
-- [ ] **Step 5.2 — Draft Summary Paragraph:** Write a final executive summary explaining what the collective evidence proves.
-- [ ] **Step 5.3 — Draft Evidence Package:** Create `docs/paper/evidence_package.md`.
+- [x] **Step 5.1 — Consolidate Tables and Sections:** Combine all tables and text from Phases 1-3.
+- [x] **Step 5.2 — Draft Summary Paragraph:** Write a final executive summary explaining what the collective evidence proves.
+- [x] **Step 5.3 — Draft Evidence Package:** Create `docs/paper/evidence_package.md`.
 
 ---
 
