@@ -23,13 +23,13 @@ This implementation plan checklist outlines the remaining work to transform the 
 - [x] **Step 2.2 — Map Mitigations:** Align each threat to the exact function in `src/` and unit test in `tests/`.
 - [x] **Step 2.3 — Draft Threat Model Document:** Create `docs/paper/threat_model.md` with the completed mapping.
 
-### ⬜ Phase 3: Generalizability Argument
+### 🟩 Phase 3: Generalizability Argument
 *Goal: Formulate a domain-neutral description of the system's core design patterns (e.g., fail-closed normalization, HITL gates) and how they transfer to other regulated domains.*
 
-- [ ] **Step 3.1 — Extract Abstract Patterns:** Define the five core safety principles used in this repository in general terms.
-- [ ] **Step 3.2 — Map to Other Domains:** Explain how these patterns apply to healthcare areas like radiology AI reporting or clinical trials matching.
-- [ ] **Step 3.3 — Document Limitations:** Highlight boundaries where this architectural pattern is not suitable.
-- [ ] **Step 3.4 — Draft Generalizability Document:** Create `docs/paper/generalizability.md`.
+- [x] **Step 3.1 — Extract Abstract Patterns:** Define the five core safety principles used in this repository in general terms.
+- [x] **Step 3.2 — Map to Other Domains:** Explain how these patterns apply to healthcare areas like radiology AI reporting or clinical trials matching.
+- [x] **Step 3.3 — Document Limitations:** Highlight boundaries where this architectural pattern is not suitable.
+- [x] **Step 3.4 — Draft Generalizability Document:** Create `docs/paper/generalizability.md`.
 
 ### ⬜ Phase 4: Related Work Section
 *Goal: Position the pipeline against existing academic work in human-in-the-loop (HITL) systems, AI safety frameworks, and medical evaluation benchmarks.*
