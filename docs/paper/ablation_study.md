@@ -2,6 +2,8 @@
 
 This document presents the findings of the ablation study conducted on the **homecare-visit-triage-agent**. The study evaluates the effectiveness of the system's safety and containment architecture by comparing it to a simulated "naive" pipeline across multiple dimensions, using the evaluation run outputs of six extractor methods.
 
+For a visual flowchart of these two paths, see the side-by-side conceptual comparison in [ieee_diagrams.md Section 5](file:///Users/mohit/Documents/GitHub/homecare-visit-triage-agent/workflows/ieee_diagrams.md#5-ablation-concept-naive-vs-architecture-protected-data-flow).
+
 ---
 
 ## 1. Executive Summary

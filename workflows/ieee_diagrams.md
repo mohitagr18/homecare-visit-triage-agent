@@ -130,3 +130,36 @@ sequenceDiagram
     
     Graph->>CLI: Write artifacts & finish
 ```
+
+---
+
+## 5. Ablation Concept: Naive vs. Architecture-Protected Data Flow
+A side-by-side flowchart comparing the data flow of the naive "batch-and-evaluate" script versus the architecture-protected pipeline, highlighting where risk leaks exist and how safeguards intercept them.
+
+```mermaid
+flowchart TD
+    subgraph NaiveFlow ["A. Naive Pipeline Data Flow (Unprotected)"]
+        direction LR
+        N_Ingest[Raw Inputs] --> N_Filter{Filter}
+        N_Filter -->|Drop Malformed| N_Drop[Silently Discarded]
+        N_Filter -->|Accept Valid| N_Eval[Direct Evaluation]
+        N_Eval --> N_Output[Public Logs & Reports]
+        note_leak[PII Leaked in Output\nMath Errors Accepted] -.-> N_Output
+    end
+
+    subgraph ProtectedFlow ["B. Architecture-Protected Data Flow (Stateful)"]
+        direction LR
+        P_Ingest[Raw Inputs] --> P_Norm[Fail-Closed Normalizer]
+        P_Norm -->|Track Skipped Counts| P_Skipped[normalize_skipped Denominator]
+        P_Norm -->|Strict Schema Typed| P_Resolve[Name Resolver]
+        P_Resolve -->|In-Memory Identity Separation| P_Eval[Evaluation Engine]
+        P_Eval -->|Unsupervised Arithmetic Audits| P_Triage{Triage Gate}
+        P_Triage -->|Ambiguous/Borderline| P_HITL[HITL Gate (Halt Graph)]
+        P_Triage -->|Clean| P_Output[Anonymized Reports (No PHI)]
+        P_HITL -->|Supervisor Resolve| P_Output
+    end
+    
+    style NaiveFlow fill:#fff5f5,stroke:#c62828
+    style ProtectedFlow fill:#f1f8e9,stroke:#558b2f
+```
+

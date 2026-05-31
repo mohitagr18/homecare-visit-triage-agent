@@ -15,7 +15,7 @@ Through a multi-dimensional ablation study, formal threat modeling, and cross-do
 ## Section 1: Empirical Ablation Study
 ### Naive vs. Architecture-Protected Performance
 
-Most document extraction pipelines operate in a naive "batch-and-evaluate" mode that lacks safety boundaries. We evaluated our system across 821 ingested timesheet rows processed by six extraction methods, demonstrating the empirical impact of the system safeguards:
+Most document extraction pipelines operate in a naive "batch-and-evaluate" mode that lacks safety boundaries. We evaluated our system across 821 ingested timesheet rows processed by six extraction methods, demonstrating the empirical impact of the system safeguards (for a visual conceptual data flow, see [ieee_diagrams.md Section 5](file:///Users/mohit/Documents/GitHub/homecare-visit-triage-agent/workflows/ieee_diagrams.md#5-ablation-concept-naive-vs-architecture-protected-data-flow)):
 
 | Dimension | Naive Pipeline (Simulated) | Architecture-Protected Pipeline (Observed) | Safety Impact |
 | :--- | :--- | :--- | :--- |
