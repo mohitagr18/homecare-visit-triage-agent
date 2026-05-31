@@ -10,6 +10,27 @@ This repository serves as the empirical foundation for demonstrating a **trustwo
 
 ---
 
+## 📚 Academic Reviewer Quick Start
+
+If you are reviewing this repository for publication, the research contributions and empirical findings are organized for ease of evaluation. 
+
+*   **Research Artifact Entry Point:** Refer to the [Research Artifact Index](docs/paper/research_index.md) for a map of all paper artifacts.
+*   **Empirical Study Replication:** Step-by-step instructions for running the pipelines and reproducing the accuracy tables are in the [Reproducibility Guide](docs/paper/reproducibility.md).
+*   **Safety & Mitigations:** The formal system boundary model is documented in the [Threat Model](docs/paper/threat_model.md).
+*   **Empirical Ablation:** Naive vs. protected pipeline results are in the [Ablation Study](docs/paper/ablation_study.md).
+*   **Literature Positioning:** How this architecture compares to prior work in healthcare AI and document extraction is detailed in [Related Work](docs/paper/related_work.md).
+*   **Generalizability Map:** How these design patterns apply to other clinical domains (e.g., trials or coding) is in [Generalizability Pattern](docs/paper/generalizability.md).
+
+### Naive vs. Protected Pipeline Comparison Summary
+
+| Failures Checked | Naive Pipeline (Unprotected) | Architecture-Protected Pipeline (Observed) | Safety Impact |
+| :--- | :--- | :--- | :--- |
+| **Malformed Ingestion** | Silently dropped (86 rows vanish) | Tracked: `normalize_skipped=86` | Honest denominator; prevents inflated accuracy reporting. |
+| **Ambiguous Choices** | Auto-accepted (50 rows) | Physical halt via **Human-in-the-Loop Gate** | Hard-stop preventing incorrect billing automation. |
+| **Math Hallucinations** | Ignored (21.4% mismatch rate) | 157 arithmetic errors flagged | Identifies model inconsistencies without ground truth labels. |
+| **Patient Identity Leak** | Real names written to reports | 0 PHI string occurrences found on disk | Strict HIPAA-compliance through secure name resolution. |
+
+---
 ## 🚀 Key Architectural Safeguards
 
 Most document extraction benchmarks are batch scripts that report aggregate metrics and silently ignore data errors. This pipeline enforces safety through a deterministic state machine:
@@ -94,4 +115,4 @@ Running the ablation study on **821 raw ingested timesheet rows** across 6 extra
 *   **50 rows** triggered the Human-in-the-Loop triage gate because of borderline limits or matching conflicts.
 *   **0 PHI leaks** were found across all persistent outputs and logs.
 
-For detailed analysis, refer to [ablation_study.md](file:///Users/mohit/Documents/GitHub/homecare-visit-triage-agent/docs/paper/ablation_study.md) and [evidence_package.md](file:///Users/mohit/Documents/GitHub/homecare-visit-triage-agent/docs/paper/evidence_package.md).
+For detailed analysis, refer to [ablation_study.md](docs/paper/ablation_study.md) and [evidence_package.md](docs/paper/evidence_package.md).

@@ -1,0 +1,5808 @@
+[
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 5,
+    "date": "2026-01-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.5,
+        "expected": 8.5,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 6,
+    "date": "2026-01-13",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:30:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=210min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 37,
+    "date": "2026-02-05",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 14.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 45,
+    "date": "2025-12-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 47,
+    "date": "2025-12-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 49,
+    "date": "2025-12-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 12.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 51,
+    "date": "2025-12-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=420.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "19:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 54,
+    "date": "2025-12-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:30:00",
+        "expected": "00:00:00",
+        "comment": "FAIL (diff=930min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=210min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 67,
+    "date": "2026-02-18",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 68,
+    "date": "2026-02-18",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 70,
+    "date": "2026-02-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 71,
+    "date": "2026-02-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 73,
+    "date": "2026-02-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 75,
+    "date": "2026-02-21",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 77,
+    "date": "2026-02-22",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 78,
+    "date": "2026-02-22",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 80,
+    "date": "2026-02-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 81,
+    "date": "2026-02-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 83,
+    "date": "2026-02-24",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 84,
+    "date": "2026-02-24",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 85,
+    "date": "2026-03-04",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 86,
+    "date": "2026-03-05",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 87,
+    "date": "2026-03-06",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 88,
+    "date": "2026-03-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 89,
+    "date": "2026-03-08",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 90,
+    "date": "2026-03-09",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 91,
+    "date": "2026-03-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 92,
+    "date": "2026-03-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 127,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 129,
+    "date": "2025-11-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 133,
+    "date": "2025-11-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 135,
+    "date": "2025-11-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_r_week18.pdf",
+    "row_index": 141,
+    "date": "2025-12-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 1.67,
+        "expected": 13.67,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 142,
+    "date": "2025-11-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 144,
+    "date": "2025-11-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 146,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 148,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 155,
+    "date": "2025-12-09",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 161,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 18.67,
+        "comment": "FAIL (diff=580.2min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "15:40:00",
+        "comment": "FAIL (diff=460min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_v_week22.pdf",
+    "row_index": 163,
+    "date": "2026-02-07",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_y_week25.pdf",
+    "row_index": 172,
+    "date": "2026-02-21",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 14.0,
+        "expected": 12.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "11:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "13:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 176,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 177,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.1,
+        "expected": 6.5,
+        "comment": "FAIL (diff=36.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:20:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=460min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 179,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=30.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=1050min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 180,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:30:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 181,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=48.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 182,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=780min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 186,
+    "date": "2026-02-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 6.0,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "01:20:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=880min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 188,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.3,
+        "expected": 4.0,
+        "comment": "FAIL (diff=198.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 198,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 2.75,
+        "comment": "FAIL (diff=315.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=585min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 200,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 2.75,
+        "comment": "FAIL (diff=345.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=315min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:30:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=780min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 201,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=225.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=570min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "17:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=345min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 203,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=285.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=330min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=825min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 205,
+    "date": "2026-02-14",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.0,
+        "expected": 4.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "18:00:00",
+        "expected": "09:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:00:00",
+        "expected": "13:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 206,
+    "date": "2026-02-15",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 11.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "11:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 209,
+    "date": "2026-02-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=930min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 210,
+    "date": "2026-02-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=30.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1020min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "band_crop_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 212,
+    "date": "2026-02-17",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "08:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=630min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 6,
+    "date": "2026-01-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.5,
+        "expected": 8.5,
+        "comment": "FAIL (diff=300.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:30:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=210min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "12:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=510min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 41,
+    "date": "2026-02-04",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 20.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 42,
+    "date": "2026-02-04",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 43,
+    "date": "2026-02-05",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 44,
+    "date": "2026-02-05",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 20.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 45,
+    "date": "2026-02-06",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 48,
+    "date": "2026-02-26",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "04:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 49,
+    "date": "2026-02-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 50,
+    "date": "2026-02-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "18:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 53,
+    "date": "2025-12-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 55,
+    "date": "2025-12-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 57,
+    "date": "2025-12-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 12.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "11:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 59,
+    "date": "2025-12-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=420.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "19:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 60,
+    "date": "2025-12-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:30:00",
+        "expected": "00:00:00",
+        "comment": "FAIL (diff=930min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "19:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=210min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 74,
+    "date": "2026-02-18",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 75,
+    "date": "2026-02-18",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 77,
+    "date": "2026-02-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 78,
+    "date": "2026-02-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 80,
+    "date": "2026-02-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 82,
+    "date": "2026-02-21",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 84,
+    "date": "2026-02-22",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 85,
+    "date": "2026-02-22",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 87,
+    "date": "2026-02-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 88,
+    "date": "2026-02-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 90,
+    "date": "2026-02-24",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 91,
+    "date": "2026-02-24",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 93,
+    "date": "2026-03-04",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 95,
+    "date": "2026-03-05",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 97,
+    "date": "2026-03-06",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 98,
+    "date": "2026-03-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 100,
+    "date": "2026-03-08",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 102,
+    "date": "2026-03-09",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 105,
+    "date": "2026-03-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 138,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 140,
+    "date": "2025-11-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 144,
+    "date": "2025-11-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 155,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 156,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 160,
+    "date": "2025-12-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 165,
+    "date": "2025-12-09",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 171,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 18.67,
+        "comment": "FAIL (diff=580.2min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "15:40:00",
+        "comment": "FAIL (diff=460min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_v_week22.pdf",
+    "row_index": 173,
+    "date": "2026-02-07",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 190,
+    "date": "2026-01-28",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:20:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=820min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "05:00:00",
+        "comment": "FAIL (diff=630min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 191,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 192,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:30:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=450min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 193,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=48.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 194,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=210.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 195,
+    "date": "2026-01-31",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 3.0,
+        "comment": "FAIL (diff=300.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "01:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=1020min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "21:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 196,
+    "date": "2026-02-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 6.0,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:30:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=450min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 197,
+    "date": "2026-02-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:30:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=90min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 199,
+    "date": "2026-02-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1020min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 201,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 4.0,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 210,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 2.75,
+        "comment": "FAIL (diff=315.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=585min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 211,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.25,
+        "expected": 2.75,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:45:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=135min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 212,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 2.75,
+        "comment": "FAIL (diff=435.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=315min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=690min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 213,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=225.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=570min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "17:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=345min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 214,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=75.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "09:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=510min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "13:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=585min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 215,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=135.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=105min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 216,
+    "date": "2026-02-14",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 11.0,
+        "expected": 4.0,
+        "comment": "FAIL (diff=420.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "09:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "11:00:00",
+        "expected": "13:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 217,
+    "date": "2026-02-15",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 220,
+    "date": "2026-02-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=30.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1020min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_cloud",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 222,
+    "date": "2026-02-17",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "08:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=630min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 7,
+    "date": "2026-01-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.0,
+        "expected": 8.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 8,
+    "date": "2026-01-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 8.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:30:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=210min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "12:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=510min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 29,
+    "date": "2025-12-16",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "23:55:00",
+        "comment": "FAIL (diff=475min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_f_week6.pdf",
+    "row_index": 30,
+    "date": "2025-12-17",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "20:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_f_week6.pdf",
+    "row_index": 32,
+    "date": "2025-12-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 37,
+    "date": "2026-02-04",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 20.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 38,
+    "date": "2026-02-05",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 20.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_g_week7.pdf",
+    "row_index": 39,
+    "date": "2026-02-06",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 11.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=300.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 44,
+    "date": "2026-02-26",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "04:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 45,
+    "date": "2026-02-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 46,
+    "date": "2026-02-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "18:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 47,
+    "date": "2025-12-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 49,
+    "date": "2025-12-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 51,
+    "date": "2025-12-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 53,
+    "date": "2025-12-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 55,
+    "date": "2025-12-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "04:00:00",
+        "expected": "19:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "00:00:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 66,
+    "date": "2026-02-18",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 68,
+    "date": "2026-02-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 71,
+    "date": "2026-02-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 75,
+    "date": "2026-02-22",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 77,
+    "date": "2026-02-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_k_week11.pdf",
+    "row_index": 80,
+    "date": "2026-02-24",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "23:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 121,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "02:30:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=870min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 122,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=690min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 124,
+    "date": "2025-11-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "02:30:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=870min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 125,
+    "date": "2025-11-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=690min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 127,
+    "date": "2025-11-21",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 15.0,
+        "comment": "FAIL (diff=780.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 130,
+    "date": "2025-11-23",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "02:30:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=1230min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 131,
+    "date": "2025-11-23",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=420.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 132,
+    "date": "2025-11-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "02:30:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=870min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 133,
+    "date": "2025-11-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=690min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 135,
+    "date": "2025-11-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "02:30:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=870min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 136,
+    "date": "2025-11-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=690min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 147,
+    "date": "2025-11-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 150,
+    "date": "2025-11-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 152,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 154,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 159,
+    "date": "2025-12-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:30:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=510min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 164,
+    "date": "2025-12-09",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:30:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=510min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 173,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 18.67,
+        "comment": "FAIL (diff=580.2min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "15:40:00",
+        "comment": "FAIL (diff=460min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_v_week22.pdf",
+    "row_index": 178,
+    "date": "2026-02-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 193,
+    "date": "2026-01-28",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:20:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=820min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "05:00:00",
+        "comment": "FAIL (diff=630min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 194,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 196,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:30:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=450min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 197,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=48.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 198,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=210.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 199,
+    "date": "2026-01-31",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 3.0,
+        "comment": "FAIL (diff=300.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "01:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=1020min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "21:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 212,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 2.75,
+        "comment": "FAIL (diff=315.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=585min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 215,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=225.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=570min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "17:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=345min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_]_week29.pdf",
+    "row_index": 231,
+    "date": "2026-01-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "layout_guided_vlm_local",
+    "source_file": "patient_^_week30.pdf",
+    "row_index": 239,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 22,
+    "date": "2025-12-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 23,
+    "date": "2025-12-11",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 0.0,
+        "expected": 10.0,
+        "comment": "FAIL (diff=600.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 24,
+    "date": "2025-12-12",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 25,
+    "date": "2025-12-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 14.0,
+        "comment": "FAIL (diff=600.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 86,
+    "date": "2026-03-05",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "14:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "14:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 90,
+    "date": "2026-03-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 92,
+    "date": "2026-03-08",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 6.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 96,
+    "date": "2026-03-09",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 98,
+    "date": "2026-03-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 124,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 131,
+    "date": "2025-11-23",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.5,
+        "expected": 9.0,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "21:30:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=90min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:30:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 157,
+    "date": "2025-11-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 158,
+    "date": "2025-11-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 159,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:06:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=366min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 160,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "03:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 168,
+    "date": "2025-12-03",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 169,
+    "date": "2025-12-04",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "13:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 173,
+    "date": "2025-12-08",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 176,
+    "date": "2025-12-08",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 226,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=252.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "02:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1170min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 247,
+    "date": "2026-02-17",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 65.0,
+        "expected": 7.0,
+        "comment": "FAIL (diff=3480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "08:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "17:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=90min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_]_week29.pdf",
+    "row_index": 266,
+    "date": "2026-01-14",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_]_week29.pdf",
+    "row_index": 268,
+    "date": "2026-01-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_^_week30.pdf",
+    "row_index": 278,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ocr_only",
+    "source_file": "patient_^_week30.pdf",
+    "row_index": 279,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "00:40:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=200min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_b_week2.pdf",
+    "row_index": 10,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 12.5,
+        "expected": 16.0,
+        "comment": "FAIL (diff=210.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 30,
+    "date": "2025-12-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 31,
+    "date": "2025-12-11",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 0.0,
+        "expected": 10.0,
+        "comment": "FAIL (diff=600.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 32,
+    "date": "2025-12-12",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 33,
+    "date": "2025-12-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 14.0,
+        "comment": "FAIL (diff=600.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 108,
+    "date": "2026-03-05",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "14:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "14:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 113,
+    "date": "2026-03-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 115,
+    "date": "2026-03-08",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 6.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 119,
+    "date": "2026-03-09",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_l_week12.pdf",
+    "row_index": 122,
+    "date": "2026-03-10",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 155,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 158,
+    "date": "2025-11-21",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 162,
+    "date": "2025-11-23",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.5,
+        "expected": 9.0,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "21:30:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=90min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:30:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 186,
+    "date": "2025-11-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 187,
+    "date": "2025-11-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.5,
+        "expected": 15.0,
+        "comment": "FAIL (diff=690.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "05:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 191,
+    "date": "2025-11-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 192,
+    "date": "2025-11-30",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 193,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:06:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=366min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 194,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "03:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 202,
+    "date": "2025-12-03",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 203,
+    "date": "2025-12-04",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "13:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=600min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 207,
+    "date": "2025-12-08",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 211,
+    "date": "2025-12-08",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "22:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 277,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=252.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "02:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1170min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 289,
+    "date": "2026-02-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.5,
+        "expected": 6.0,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "03:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=780min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "03:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1140min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 305,
+    "date": "2026-02-17",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 65.0,
+        "expected": 7.0,
+        "comment": "FAIL (diff=3480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "15:00:00",
+        "expected": "08:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "17:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=90min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 320,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=285.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "10:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=450min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=765min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_]_week29.pdf",
+    "row_index": 331,
+    "date": "2026-01-14",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_]_week29.pdf",
+    "row_index": 333,
+    "date": "2026-01-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_^_week30.pdf",
+    "row_index": 346,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 2.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      }
+    ]
+  },
+  {
+    "method": "ppocr_grid",
+    "source_file": "patient_^_week30.pdf",
+    "row_index": 347,
+    "date": "2026-02-03",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "00:40:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=200min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_a_week1.pdf",
+    "row_index": 2,
+    "date": "2026-01-07",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "17:30:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_b_week2.pdf",
+    "row_index": 8,
+    "date": "2025-12-24",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "18:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_e_week5.pdf",
+    "row_index": 27,
+    "date": "2025-12-16",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "23:55:00",
+        "comment": "FAIL (diff=475min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_f_week6.pdf",
+    "row_index": 28,
+    "date": "2025-12-17",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "20:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_f_week6.pdf",
+    "row_index": 30,
+    "date": "2025-12-19",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "16:00:00",
+        "expected": "18:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 42,
+    "date": "2026-02-26",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "12:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "04:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=240min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 43,
+    "date": "2026-02-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "12:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_h_week8.pdf",
+    "row_index": 44,
+    "date": "2026-02-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 16.0,
+        "expected": 8.0,
+        "comment": "FAIL (diff=480.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "18:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "10:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 49,
+    "date": "2025-12-26",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "11:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_i_week9.pdf",
+    "row_index": 53,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "07:00:00",
+        "expected": "04:00:00",
+        "comment": "FAIL (diff=180min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "11:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 124,
+    "date": "2025-11-19",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 126,
+    "date": "2025-11-20",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 130,
+    "date": "2025-11-24",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_q_week17.pdf",
+    "row_index": 132,
+    "date": "2025-11-25",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 4.5,
+        "comment": "FAIL (diff=270.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "21:30:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 140,
+    "date": "2025-11-27",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 15.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 141,
+    "date": "2025-11-28",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 15.0,
+        "comment": "FAIL (diff=600.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "05:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=720min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 143,
+    "date": "2025-11-26",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 145,
+    "date": "2025-12-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "row_index": 146,
+    "date": "2025-12-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 147,
+    "date": "2025-12-03",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_t_week20.pdf",
+    "row_index": 152,
+    "date": "2025-12-09",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 5.0,
+        "expected": 9.0,
+        "comment": "FAIL (diff=240.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "17:00:00",
+        "expected": "23:00:00",
+        "comment": "FAIL (diff=360min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "22:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=840min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 159,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 18.67,
+        "comment": "FAIL (diff=580.2min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:00:00",
+        "expected": "15:40:00",
+        "comment": "FAIL (diff=460min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 161,
+    "date": "2025-12-24",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 162,
+    "date": "2025-12-28",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 163,
+    "date": "2025-12-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.0,
+        "expected": 18.67,
+        "comment": "FAIL (diff=580.2min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "07:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "15:40:00",
+        "comment": "FAIL (diff=580min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "row_index": 164,
+    "date": "2025-12-30",
+    "failed_fields": [
+      {
+        "field": "time_out",
+        "predicted": "06:00:00",
+        "expected": "08:00:00",
+        "comment": "FAIL (diff=120min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_v_week22.pdf",
+    "row_index": 166,
+    "date": "2026-02-07",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 4.0,
+        "expected": 16.0,
+        "comment": "FAIL (diff=720.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:00:00",
+        "expected": "20:00:00",
+        "comment": "FAIL (diff=300min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 186,
+    "date": "2026-01-28",
+    "failed_fields": [
+      {
+        "field": "time_in",
+        "predicted": "08:20:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=820min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "05:00:00",
+        "comment": "FAIL (diff=630min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 187,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "08:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "16:00:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 188,
+    "date": "2026-01-29",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:30:00",
+        "expected": "22:30:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 189,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 7.3,
+        "expected": 6.5,
+        "comment": "FAIL (diff=48.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "15:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=390min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 190,
+    "date": "2026-01-30",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 9.5,
+        "expected": 6.5,
+        "comment": "FAIL (diff=180.0min > 15min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=780min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 192,
+    "date": "2026-02-01",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.0,
+        "comment": "FAIL (diff=120.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "01:00:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=540min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=420min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "row_index": 193,
+    "date": "2026-02-02",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 6.0,
+        "comment": "FAIL (diff=150.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "00:00:00",
+        "expected": "16:00:00",
+        "comment": "FAIL (diff=960min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "08:30:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=810min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 207,
+    "date": "2026-02-12",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.5,
+        "expected": 2.75,
+        "comment": "FAIL (diff=345.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:45:00",
+        "comment": "FAIL (diff=315min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "07:30:00",
+        "expected": "20:30:00",
+        "comment": "FAIL (diff=780min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 209,
+    "date": "2026-02-13",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 10.0,
+        "expected": 5.25,
+        "comment": "FAIL (diff=285.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "23:00:00",
+        "expected": "17:30:00",
+        "comment": "FAIL (diff=330min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "09:00:00",
+        "expected": "22:45:00",
+        "comment": "FAIL (diff=825min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 210,
+    "date": "2026-02-14",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 3.0,
+        "expected": 4.0,
+        "comment": "FAIL (diff=60.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "20:00:00",
+        "expected": "09:00:00",
+        "comment": "FAIL (diff=660min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "21:00:00",
+        "expected": "13:00:00",
+        "comment": "FAIL (diff=480min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 211,
+    "date": "2026-02-15",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 11.0,
+        "expected": 5.0,
+        "comment": "FAIL (diff=360.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "11:00:00",
+        "expected": "10:00:00",
+        "comment": "FAIL (diff=60min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "00:00:00",
+        "expected": "15:00:00",
+        "comment": "FAIL (diff=900min > 30min)"
+      }
+    ]
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "row_index": 212,
+    "date": "2026-02-16",
+    "failed_fields": [
+      {
+        "field": "total_hours",
+        "predicted": 8.0,
+        "expected": 6.5,
+        "comment": "FAIL (diff=90.0min > 15min)"
+      },
+      {
+        "field": "time_in",
+        "predicted": "20:00:00",
+        "expected": "15:30:00",
+        "comment": "FAIL (diff=270min > 30min)"
+      },
+      {
+        "field": "time_out",
+        "predicted": "00:00:00",
+        "expected": "22:00:00",
+        "comment": "FAIL (diff=1320min > 30min)"
+      }
+    ]
+  }
+]
