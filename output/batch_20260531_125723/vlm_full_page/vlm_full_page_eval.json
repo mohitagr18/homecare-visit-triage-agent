@@ -1,0 +1,3106 @@
+[
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_a_week1.pdf",
+    "total_rows": 6,
+    "accepted_rows": 3,
+    "flagged_rows": 3,
+    "gt_matched_rows": 4,
+    "row_evals": [
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 2,
+        "date": "2026-01-07",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 7.0,
+            "expected": 7.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "17:30:00",
+            "expected": "15:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=120min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 3,
+        "date": "2026-01-08",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 7.0,
+            "expected": 7.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:30:00",
+            "expected": "15:30:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 4,
+        "date": "2026-01-09",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 7.0,
+            "expected": 7.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:30:00",
+            "expected": "15:30:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 5,
+        "date": "2026-01-10",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 6,
+        "date": "2026-01-11",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_a_week1.pdf",
+        "row_index": 7,
+        "date": "2026-01-12",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.5,
+            "expected": 8.5,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": true
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.6666666666666666,
+    "fully_correct_rate": 0.75,
+    "hours_mismatch_rate": 0.5
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_b_week2.pdf",
+    "total_rows": 2,
+    "accepted_rows": 0,
+    "flagged_rows": 2,
+    "gt_matched_rows": 1,
+    "row_evals": [
+      {
+        "source_file": "patient_b_week2.pdf",
+        "row_index": 8,
+        "date": "2025-12-24",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 16.0,
+            "expected": 16.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "06:00:00",
+            "expected": "06:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "18:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=240min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_b_week2.pdf",
+        "row_index": 9,
+        "date": "2025-12-25",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 1.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 1.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_c_week3.pdf",
+    "total_rows": 4,
+    "accepted_rows": 4,
+    "flagged_rows": 0,
+    "gt_matched_rows": 0,
+    "row_evals": [
+      {
+        "source_file": "patient_c_week3.pdf",
+        "row_index": 10,
+        "date": "2025-12-13",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_c_week3.pdf",
+        "row_index": 11,
+        "date": "2025-12-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_c_week3.pdf",
+        "row_index": 12,
+        "date": "2025-12-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_c_week3.pdf",
+        "row_index": 13,
+        "date": "2025-12-16",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_d_week4.pdf",
+    "total_rows": 7,
+    "accepted_rows": 7,
+    "flagged_rows": 0,
+    "gt_matched_rows": 7,
+    "row_evals": [
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 14,
+        "date": "2026-01-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 15,
+        "date": "2026-01-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 16,
+        "date": "2026-01-30",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 17,
+        "date": "2026-01-31",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 18,
+        "date": "2026-02-01",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 19,
+        "date": "2026-02-02",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_d_week4.pdf",
+        "row_index": 20,
+        "date": "2026-02-03",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "15:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 1.0,
+    "time_out_accuracy": 1.0,
+    "fully_correct_rate": 1.0,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_e_week5.pdf",
+    "total_rows": 7,
+    "accepted_rows": 6,
+    "flagged_rows": 1,
+    "gt_matched_rows": 7,
+    "row_evals": [
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 21,
+        "date": "2025-12-10",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 10.0,
+            "expected": 10.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 22,
+        "date": "2025-12-11",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 10.0,
+            "expected": 10.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 23,
+        "date": "2025-12-12",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 24,
+        "date": "2025-12-13",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 25,
+        "date": "2025-12-14",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 26,
+        "date": "2025-12-15",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_e_week5.pdf",
+        "row_index": 27,
+        "date": "2025-12-16",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "16:00:00",
+            "expected": "23:55:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=475min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "07:55:00",
+            "expected": "07:55:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 0.8571428571428571,
+    "time_out_accuracy": 1.0,
+    "fully_correct_rate": 0.8571428571428571,
+    "hours_mismatch_rate": 0.14285714285714285
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_f_week6.pdf",
+    "total_rows": 7,
+    "accepted_rows": 5,
+    "flagged_rows": 2,
+    "gt_matched_rows": 7,
+    "row_evals": [
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 28,
+        "date": "2025-12-17",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 10.0,
+            "expected": 10.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "20:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=720min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 29,
+        "date": "2025-12-18",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 10.0,
+            "expected": 10.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 30,
+        "date": "2025-12-19",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "16:00:00",
+            "expected": "18:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=120min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 31,
+        "date": "2025-12-20",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 32,
+        "date": "2025-12-21",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 33,
+        "date": "2025-12-22",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 14.0,
+            "expected": 14.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_f_week6.pdf",
+        "row_index": 34,
+        "date": "2025-12-23",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 8.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "07:55:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=5min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 0.8333333333333334,
+    "time_out_accuracy": 0.8571428571428571,
+    "fully_correct_rate": 0.7142857142857143,
+    "hours_mismatch_rate": 0.2857142857142857
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_g_week7.pdf",
+    "total_rows": 6,
+    "accepted_rows": 4,
+    "flagged_rows": 2,
+    "gt_matched_rows": 0,
+    "row_evals": [
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 35,
+        "date": "2026-02-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 36,
+        "date": "2026-02-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 37,
+        "date": "2026-02-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 38,
+        "date": "2026-02-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 39,
+        "date": "2026-02-16",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_g_week7.pdf",
+        "row_index": 40,
+        "date": "2026-02-16",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.3333333333333333
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_h_week8.pdf",
+    "total_rows": 4,
+    "accepted_rows": 4,
+    "flagged_rows": 0,
+    "gt_matched_rows": 3,
+    "row_evals": [
+      {
+        "source_file": "patient_h_week8.pdf",
+        "row_index": 41,
+        "date": "2026-02-23",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_h_week8.pdf",
+        "row_index": 42,
+        "date": "2026-02-26",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 16.0,
+            "expected": 16.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "12:00:00",
+            "expected": "16:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=240min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=240min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_h_week8.pdf",
+        "row_index": 43,
+        "date": "2026-02-27",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 16.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=480.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "12:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=300min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "04:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=660min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_h_week8.pdf",
+        "row_index": 44,
+        "date": "2026-02-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 16.0,
+            "expected": 8.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=480.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "07:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=660min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "10:00:00",
+            "expected": "15:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=300min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.3333333333333333,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_i_week9.pdf",
+    "total_rows": 4,
+    "accepted_rows": 2,
+    "flagged_rows": 2,
+    "gt_matched_rows": 4,
+    "row_evals": [
+      {
+        "source_file": "patient_i_week9.pdf",
+        "row_index": 45,
+        "date": "2025-12-24",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "16:00:00",
+            "expected": "16:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_i_week9.pdf",
+        "row_index": 47,
+        "date": "2025-12-25",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "16:00:00",
+            "expected": "16:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_i_week9.pdf",
+        "row_index": 49,
+        "date": "2025-12-26",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 16.0,
+            "expected": 16.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "07:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "11:00:00",
+            "expected": "23:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=720min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_i_week9.pdf",
+        "row_index": 53,
+        "date": "2025-12-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 16.0,
+            "expected": 16.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "07:00:00",
+            "expected": "04:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=180min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "11:00:00",
+            "expected": "20:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=540min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 0.75,
+    "time_out_accuracy": 0.5,
+    "fully_correct_rate": 0.5,
+    "hours_mismatch_rate": 0.5
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_j_week10.pdf",
+    "total_rows": 5,
+    "accepted_rows": 4,
+    "flagged_rows": 1,
+    "gt_matched_rows": 0,
+    "row_evals": [
+      {
+        "source_file": "patient_j_week10.pdf",
+        "row_index": 60,
+        "date": "2025-12-13",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_j_week10.pdf",
+        "row_index": 61,
+        "date": "2025-12-14",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_j_week10.pdf",
+        "row_index": 62,
+        "date": "2025-12-15",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_j_week10.pdf",
+        "row_index": 63,
+        "date": "2025-12-16",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_j_week10.pdf",
+        "row_index": 64,
+        "date": "2025-12-17",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.2
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_q_week17.pdf",
+    "total_rows": 6,
+    "accepted_rows": 6,
+    "flagged_rows": 0,
+    "gt_matched_rows": 6,
+    "row_evals": [
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 124,
+        "date": "2025-11-19",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 4.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=270.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "21:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=810min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 126,
+        "date": "2025-11-20",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 4.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=270.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "21:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=810min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 127,
+        "date": "2025-11-21",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 15.0,
+            "expected": 15.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "17:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 128,
+        "date": "2025-11-23",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 130,
+        "date": "2025-11-24",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 4.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=270.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "21:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=810min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_q_week17.pdf",
+        "row_index": 132,
+        "date": "2025-11-25",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 4.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=270.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "21:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=810min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.3333333333333333,
+    "time_in_accuracy": 0.3333333333333333,
+    "time_out_accuracy": 0.3333333333333333,
+    "fully_correct_rate": 0.3333333333333333,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_s_week19.pdf",
+    "total_rows": 8,
+    "accepted_rows": 7,
+    "flagged_rows": 1,
+    "gt_matched_rows": 8,
+    "row_evals": [
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 139,
+        "date": "2025-11-26",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 5.0,
+            "expected": 5.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "17:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 140,
+        "date": "2025-11-27",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 15.0,
+            "expected": 9.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=360.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "23:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 141,
+        "date": "2025-11-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 5.0,
+            "expected": 15.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=600.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "05:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=720min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "22:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 142,
+        "date": "2025-12-01",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 5.0,
+            "expected": 5.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "17:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 143,
+        "date": "2025-11-26",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 5.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=240.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 144,
+        "date": "2025-11-27",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 145,
+        "date": "2025-12-01",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 5.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=240.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_s_week19.pdf",
+        "row_index": 146,
+        "date": "2025-12-02",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 5.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=240.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.375,
+    "time_in_accuracy": 0.375,
+    "time_out_accuracy": 0.5,
+    "fully_correct_rate": 0.375,
+    "hours_mismatch_rate": 0.125
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_t_week20.pdf",
+    "total_rows": 7,
+    "accepted_rows": 7,
+    "flagged_rows": 0,
+    "gt_matched_rows": 7,
+    "row_evals": [
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 147,
+        "date": "2025-12-03",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 5.0,
+            "expected": 9.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=240.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "23:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "22:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 148,
+        "date": "2025-12-03",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 149,
+        "date": "2025-12-04",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 150,
+        "date": "2025-12-07",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 151,
+        "date": "2025-12-08",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 152,
+        "date": "2025-12-09",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 5.0,
+            "expected": 9.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=240.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "17:00:00",
+            "expected": "23:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=360min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "22:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=840min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_t_week20.pdf",
+        "row_index": 153,
+        "date": "2025-12-09",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.7142857142857143,
+    "time_in_accuracy": 0.7142857142857143,
+    "time_out_accuracy": 0.7142857142857143,
+    "fully_correct_rate": 0.7142857142857143,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_u_week21.pdf",
+    "total_rows": 9,
+    "accepted_rows": 5,
+    "flagged_rows": 4,
+    "gt_matched_rows": 8,
+    "row_evals": [
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 154,
+        "date": "2025-12-24",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 155,
+        "date": "2025-12-25",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 157,
+        "date": "2025-12-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 159,
+        "date": "2025-12-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 18.67,
+            "score": 0.0,
+            "comment": "FAIL (diff=580.2min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "07:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=960min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "15:40:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=460min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 160,
+        "date": "2025-12-30",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:00:00",
+            "expected": "08:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 161,
+        "date": "2025-12-24",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "06:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=120min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 162,
+        "date": "2025-12-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "06:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=120min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 163,
+        "date": "2025-12-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 18.67,
+            "score": 0.0,
+            "comment": "FAIL (diff=580.2min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "07:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=960min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "06:00:00",
+            "expected": "15:40:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=580min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_u_week21.pdf",
+        "row_index": 164,
+        "date": "2025-12-30",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.0,
+            "expected": 9.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "06:00:00",
+            "expected": "08:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=120min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": true
+      }
+    ],
+    "hours_accuracy": 0.75,
+    "time_in_accuracy": 0.75,
+    "time_out_accuracy": 0.375,
+    "fully_correct_rate": 0.375,
+    "hours_mismatch_rate": 0.4444444444444444
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_v_week22.pdf",
+    "total_rows": 1,
+    "accepted_rows": 0,
+    "flagged_rows": 1,
+    "gt_matched_rows": 1,
+    "row_evals": [
+      {
+        "source_file": "patient_v_week22.pdf",
+        "row_index": 166,
+        "date": "2026-02-07",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 4.0,
+            "expected": 16.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=720.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "23:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:00:00",
+            "expected": "20:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=300min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 1.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 1.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_z_week26.pdf",
+    "total_rows": 1,
+    "accepted_rows": 1,
+    "flagged_rows": 0,
+    "gt_matched_rows": 0,
+    "row_evals": [
+      {
+        "source_file": "patient_z_week26.pdf",
+        "row_index": 178,
+        "date": "2026-01-01",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_[_week27.pdf",
+    "total_rows": 9,
+    "accepted_rows": 9,
+    "flagged_rows": 0,
+    "gt_matched_rows": 8,
+    "row_evals": [
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 186,
+        "date": "2026-01-28",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 7.1,
+            "expected": 7.0,
+            "score": 1.0,
+            "comment": "PASS (diff=6.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "08:20:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=820min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:30:00",
+            "expected": "05:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=630min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 187,
+        "date": "2026-01-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 6.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=90.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "08:00:00",
+            "expected": "16:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=480min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "16:00:00",
+            "expected": "22:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=390min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 188,
+        "date": "2026-01-29",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.5,
+            "expected": 6.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=120.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "16:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=420min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "07:30:00",
+            "expected": "22:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=900min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 189,
+        "date": "2026-01-30",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 7.3,
+            "expected": 6.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=48.0min > 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "15:30:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=390min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 190,
+        "date": "2026-01-30",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 9.5,
+            "expected": 6.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=180.0min > 15min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "09:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=780min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 191,
+        "date": "2026-01-31",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 3.0,
+            "expected": 3.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "18:00:00",
+            "expected": "18:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "21:00:00",
+            "expected": "21:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 192,
+        "date": "2026-02-01",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 6.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=120.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "01:00:00",
+            "expected": "10:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=540min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "09:00:00",
+            "expected": "16:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=420min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 193,
+        "date": "2026-02-02",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.5,
+            "expected": 6.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=150.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "00:00:00",
+            "expected": "16:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=960min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "08:30:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=810min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_[_week27.pdf",
+        "row_index": 194,
+        "date": "2026-02-13",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.25,
+    "time_in_accuracy": 0.16666666666666666,
+    "time_out_accuracy": 0.125,
+    "fully_correct_rate": 0.125,
+    "hours_mismatch_rate": 0.3333333333333333
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_\\_week28.pdf",
+    "total_rows": 8,
+    "accepted_rows": 5,
+    "flagged_rows": 3,
+    "gt_matched_rows": 5,
+    "row_evals": [
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 201,
+        "date": "2026-01-05",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 202,
+        "date": "2026-01-06",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 203,
+        "date": "2026-01-07",
+        "field_evals": [],
+        "fully_correct": false,
+        "matched_gt": false,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 207,
+        "date": "2026-02-12",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.5,
+            "expected": 2.75,
+            "score": 0.0,
+            "comment": "FAIL (diff=345.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:45:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=315min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "07:30:00",
+            "expected": "20:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=780min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 209,
+        "date": "2026-02-13",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 10.0,
+            "expected": 5.25,
+            "score": 0.0,
+            "comment": "FAIL (diff=285.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "23:00:00",
+            "expected": "17:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=330min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "09:00:00",
+            "expected": "22:45:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=825min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 210,
+        "date": "2026-02-14",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 3.0,
+            "expected": 4.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=60.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "20:00:00",
+            "expected": "09:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=660min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "21:00:00",
+            "expected": "13:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=480min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 211,
+        "date": "2026-02-15",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 11.0,
+            "expected": 5.0,
+            "score": 0.0,
+            "comment": "FAIL (diff=360.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "11:00:00",
+            "expected": "10:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=60min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "00:00:00",
+            "expected": "15:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=900min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_\\_week28.pdf",
+        "row_index": 212,
+        "date": "2026-02-16",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 8.0,
+            "expected": 6.5,
+            "score": 0.0,
+            "comment": "FAIL (diff=90.0min > 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "20:00:00",
+            "expected": "15:30:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=270min > 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "00:00:00",
+            "expected": "22:00:00",
+            "score": 0.0,
+            "comment": "FAIL (diff=1320min > 30min)"
+          }
+        ],
+        "fully_correct": false,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 0.0,
+    "time_in_accuracy": 0.0,
+    "time_out_accuracy": 0.0,
+    "fully_correct_rate": 0.0,
+    "hours_mismatch_rate": 0.375
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_]_week29.pdf",
+    "total_rows": 4,
+    "accepted_rows": 4,
+    "flagged_rows": 0,
+    "gt_matched_rows": 4,
+    "row_evals": [
+      {
+        "source_file": "patient_]_week29.pdf",
+        "row_index": 215,
+        "date": "2026-01-14",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_]_week29.pdf",
+        "row_index": 216,
+        "date": "2026-01-15",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_]_week29.pdf",
+        "row_index": 217,
+        "date": "2026-01-16",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_]_week29.pdf",
+        "row_index": 218,
+        "date": "2026-01-19",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 1.0,
+    "time_out_accuracy": 1.0,
+    "fully_correct_rate": 1.0,
+    "hours_mismatch_rate": 0.0
+  },
+  {
+    "method": "vlm_full_page",
+    "source_file": "patient_^_week30.pdf",
+    "total_rows": 5,
+    "accepted_rows": 5,
+    "flagged_rows": 0,
+    "gt_matched_rows": 5,
+    "row_evals": [
+      {
+        "source_file": "patient_^_week30.pdf",
+        "row_index": 219,
+        "date": "2026-01-21",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_^_week30.pdf",
+        "row_index": 220,
+        "date": "2026-01-22",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_^_week30.pdf",
+        "row_index": 221,
+        "date": "2026-01-23",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_^_week30.pdf",
+        "row_index": 222,
+        "date": "2026-01-26",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      },
+      {
+        "source_file": "patient_^_week30.pdf",
+        "row_index": 223,
+        "date": "2026-01-27",
+        "field_evals": [
+          {
+            "field": "total_hours",
+            "predicted": 6.0,
+            "expected": 6.0,
+            "score": 1.0,
+            "comment": "PASS (diff=0.0min \u2264 15min)"
+          },
+          {
+            "field": "time_in",
+            "predicted": "22:00:00",
+            "expected": "22:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          },
+          {
+            "field": "time_out",
+            "predicted": "04:00:00",
+            "expected": "04:00:00",
+            "score": 1.0,
+            "comment": "PASS (diff=0min \u2264 30min)"
+          }
+        ],
+        "fully_correct": true,
+        "matched_gt": true,
+        "flagged_for_review": false
+      }
+    ],
+    "hours_accuracy": 1.0,
+    "time_in_accuracy": 1.0,
+    "time_out_accuracy": 1.0,
+    "fully_correct_rate": 1.0,
+    "hours_mismatch_rate": 0.0
+  }
+]
