@@ -21,7 +21,7 @@ Most document extraction pipelines operate in a naive "batch-and-evaluate" mode 
 | :--- | :--- | :--- | :--- |
 | **Malformed Inputs** | Silently dropped (86 rows vanished) | Explicitly tracked: `normalize_skipped=86` | Preserves metric denominator honesty; prevents artificial accuracy inflation. |
 | **Extractor Warnings** | Warnings ignored (174 flags discarded) | Flags logged as data quality indicators | Retains internal model confidence signals for administrative audit. |
-| **Borderline Decisions** | Silently auto-accepted (43 rows) | Routed to Human-in-the-Loop (HITL) gate | Enforces physical human oversight on edge cases near billing tolerance. |
+| **Borderline Decisions** | Silently auto-accepted (50 rows) | Routed to Human-in-the-Loop (HITL) gate | Enforces physical human oversight on edge cases near billing tolerance. |
 | **Protected PII** | Real patient names written to logs/files | 0 PHI leaks detected across 9 output files | Strict HIPAA-compliance through anonymized state tracking. |
 | **Internal Consistency** | Math errors ignored (21.4% mismatch rate) | 157 arithmetic anomalies intercepted | Surfaces extraction failures using unsupervised self-diagnostic arithmetic. |
 
@@ -30,12 +30,12 @@ The following table summarizes the baseline performance across the six extractio
 
 | Method | Hours Accuracy (GT matched) | GT Matched Rows | Skipped Rows | Extractor Flags | HITL Reviews | Math Mismatch |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **band_crop_vlm_cloud** | 74.1% | 139 | 5 | 36 | 4 | 12.0% |
-| **layout_guided_vlm_cloud** | 69.4% | 124 | 7 | 32 | 3 | 10.2% |
-| **layout_guided_vlm_local** | 62.6% | 91 | 0 | 30 | 4 | 22.6% |
+| **band_crop_vlm_cloud** | 78.4% | 171 | 5 | 36 | 7 | 12.0% |
+| **layout_guided_vlm_cloud** | 72.9% | 155 | 7 | 32 | 4 | 10.2% |
+| **layout_guided_vlm_local** | 63.9% | 108 | 0 | 30 | 4 | 22.6% |
 | **ocr_only** | 51.7% | 29 | 15 | 23 | 11 | 86.2% |
-| **ppocr_grid** | 45.7% | 35 | 27 | 31 | 12 | 75.7% |
-| **vlm_full_page** | 64.4% | 73 | 32 | 22 | 9 | 22.7% |
+| **ppocr_grid** | 47.2% | 36 | 27 | 31 | 13 | 75.7% |
+| **vlm_full_page** | 68.2% | 85 | 32 | 22 | 11 | 22.7% |
 
 *Key Takeaway:* While raw model accuracy remains identical between the two setups, the naive pipeline hides significant data loss and corruption (e.g., in `ppocr_grid`, **42.2% of the input rows** were silently discarded and **75.7%** had mathematical errors). The protected pipeline provides the auditability required for clinical deployability.
 

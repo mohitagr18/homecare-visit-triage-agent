@@ -108,15 +108,22 @@ class NameResolver:
 
         real_file = self._master_files[week_num - 1]
 
-        # Reconcile hyphen vs space mismatch if GT filenames are registered
+        # Reconcile hyphen vs space/dot/suffix mismatches if GT filenames are registered
         if self._gt_filenames:
-            clean_real = real_file.replace('-', '').replace(' ', '').lower()
+            def _normalize_fn(fname: str) -> str:
+                clean = fname.lower().replace('-', '').replace('_', '').replace(' ', '')
+                clean = re.sub(r'\.+pdf$', '', clean)
+                clean = re.sub(r'\.+$', '', clean)
+                clean = re.sub(r'c$', '', clean)
+                return clean.strip()
+
+            clean_real = _normalize_fn(real_file)
             for gt_file in self._gt_filenames:
-                clean_gt = gt_file.replace('-', '').replace(' ', '').lower()
-                if clean_real == clean_gt:
+                if _normalize_fn(gt_file) == clean_real:
                     return gt_file
 
         return real_file
+
 
     def _match_against_gt(self, real_name: str, anon_filename: str) -> str | None:
         """Find the best-matching GT filename for this patient.
