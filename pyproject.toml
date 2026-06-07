@@ -2,6 +2,7 @@
 name = "homecare-visit-triage-agent"
 version = "0.1.0"
 description = "LangGraph-based evaluation pipeline for benchmarking document extraction methods on healthcare timesheets"
+license = {text = "Apache-2.0"}
 requires-python = ">=3.11"
 
 dependencies = [
